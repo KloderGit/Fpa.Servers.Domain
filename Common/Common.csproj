@@ -7,21 +7,18 @@
   <ItemGroup>
     <PackageReference Include="Mapster" Version="3.2.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="Serilog" Version="2.7.1" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="2.0.2" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.3.0" />
     <PackageReference Include="Serilog.Sinks.Seq" Version="4.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Library1C\Library1C.csproj" />
-    <ProjectReference Include="..\..\LibraryAmoCRM\LibraryAmoCRM.csproj" />
-    <ProjectReference Include="..\..\LibraryNeoClient\LibraryNeoClient.csproj" />
-    <ProjectReference Include="..\Domain\Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Microsoft.AspNetCore.Mvc.ViewFeatures">
-      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.mvc.viewfeatures\2.0.4\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\Services\Library1C\Library1C.csproj" />
+    <ProjectReference Include="..\..\Services\LibraryAmoCRM\LibraryAmoCRM.csproj" />
+    <ProjectReference Include="..\..\Services\LibraryNeoClient\LibraryNeoClient.csproj" />
+    <ProjectReference Include="..\Core\Domain.csproj" />
   </ItemGroup>
 
 </Project>
